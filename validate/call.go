@@ -4,12 +4,6 @@ import (
 	"strings"
 )
 
-//var callRegex *regexp.Regexp
-//
-//func init() {
-//	callRegex = regexp.MustCompile(`[a-zA-Z]+[0-9]+`)
-//}
-
 // CallSign return true if callSign format is valid
 // callSign is case insensitive
 func CallSign(callSign string) bool {
