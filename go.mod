@@ -1,3 +1,3 @@
-module gitlab.com/s51ds/validators
+module gitlab.com/s51ds/validate
 
 go 1.13
