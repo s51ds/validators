@@ -95,6 +95,13 @@ func TestCallSign(t *testing.T) {
 			},
 			want: false,
 		},
+		{
+			name: "S53O",
+			args: args{
+				callSign: "S53O",
+			},
+			want: true,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
