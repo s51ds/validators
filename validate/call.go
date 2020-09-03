@@ -1,6 +1,7 @@
 package validate
 
 import (
+	"strconv"
 	"strings"
 )
 
@@ -43,9 +44,14 @@ func CallSign(callSign string) bool {
 			}
 		}
 	} else {
-		// final check, last character can not be a number
+		// final checks:
+		// last character can not be a number
 		b := byte(callSign[callSignLen-1])
 		if b >= 48 && b <= 57 {
+			return false
+		}
+		// only one number is allowed as first character
+		if _, err := strconv.Atoi(callSign[:2]); err == nil {
 			return false
 		}
 	}
