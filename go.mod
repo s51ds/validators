@@ -1,3 +1,5 @@
-module gitlab.com/s51ds/validators
+module github.com/s51ds/validators
 
-go 1.13
+go 1.16
+
+

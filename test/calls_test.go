@@ -3,7 +3,7 @@ package test
 import (
 	"bufio"
 	"fmt"
-	"gitlab.com/s51ds/validators/validate"
+	"github.com/s51ds/validators/validate"
 	"log"
 	"os"
 	"testing"
