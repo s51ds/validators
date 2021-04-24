@@ -5,8 +5,7 @@ import (
 	"strings"
 )
 
-// CallSign return true if callSign format is valid
-// callSign is case insensitive
+// CallSign returns true if callSign format is valid
 func CallSign(callSign string) bool {
 	callSignLen := len(callSign)
 	// check if len is at least 3 characters
