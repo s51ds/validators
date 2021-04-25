@@ -39,6 +39,27 @@ func TestLocator(t *testing.T) {
 			},
 			want: false,
 		},
+		{
+			name: "nok-4",
+			args: args{
+				locator: "",
+			},
+			want: false,
+		},
+		{
+			name: "nok-5",
+			args: args{
+				locator: " ",
+			},
+			want: false,
+		},
+		{
+			name: "nok-6",
+			args: args{
+				locator: "    ",
+			},
+			want: false,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

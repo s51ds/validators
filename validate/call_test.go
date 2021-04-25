@@ -19,6 +19,22 @@ func TestCallSign(t *testing.T) {
 			want: false,
 		},
 		{
+			name: "space-FALSE",
+			args: args{
+				callSign: " ",
+			},
+			want: false,
+		},
+
+		{
+			name: "spaces-FALSE",
+			args: args{
+				callSign: "     ",
+			},
+			want: false,
+		},
+
+		{
 			name: "TooShort-1-FALSE",
 			args: args{
 				callSign: "ab",
