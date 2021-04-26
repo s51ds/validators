@@ -12,12 +12,20 @@ func TestLocator(t *testing.T) {
 		want bool
 	}{
 		{
-			name: "ok-1",
+			name: "6chars",
 			args: args{
 				locator: "JN76to",
 			},
 			want: true,
 		},
+		{
+			name: "4chars",
+			args: args{
+				locator: "JN76",
+			},
+			want: true,
+		},
+
 		{
 			name: "nok-1",
 			args: args{
