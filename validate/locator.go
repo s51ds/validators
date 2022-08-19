@@ -12,8 +12,8 @@ func init() {
 	locatorRegex4chars = regexp.MustCompile(`^[A-Ra-r]{2}[0-9]{2}$`)
 }
 
-// Locator returns true if locator is valid 6 characters Maidenhead locator.
-// locator is case insensitive
+// Locator returns true if locator is valid 6 or 4 characters Maidenhead locator.
+// locator is case-insensitive
 func Locator(locator string) bool {
 	if !locatorRegex6chars.MatchString(locator) {
 		if locatorRegex4chars.MatchString(locator) {
