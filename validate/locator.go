@@ -4,13 +4,10 @@ import (
 	"regexp"
 )
 
-var locatorRegex6chars *regexp.Regexp
-var locatorRegex4chars *regexp.Regexp
-
-func init() {
+var (
 	locatorRegex6chars = regexp.MustCompile(`^[A-Ra-r]{2}[0-9]{2}[A-Xa-x]{2}$`)
 	locatorRegex4chars = regexp.MustCompile(`^[A-Ra-r]{2}[0-9]{2}$`)
-}
+)
 
 // Locator returns true if locator is valid 6 or 4 characters Maidenhead locator.
 // locator is case-insensitive
